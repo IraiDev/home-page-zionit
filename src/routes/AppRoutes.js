@@ -1,14 +1,11 @@
-import { HashRouter, Routes, Route } from 'react-router-dom'
-import { routes } from '../types/types'
-import PublicRoutes from './PublicRoutes'
-import Login from '../pages/Login'
-import PrivateRoutes from './PrivateRoutes'
+import { HashRouter } from 'react-router-dom'
 import DashRoutes from './DashRoutes'
 
 const AppRoutes = () => {
   return (
     <HashRouter>
-      <Routes>
+      <DashRoutes />
+      {/* <Routes>
         <Route
           path={routes.login}
           element={
@@ -25,7 +22,7 @@ const AppRoutes = () => {
             </PrivateRoutes>
           }
         />
-      </Routes>
+      </Routes> */}
     </HashRouter>
   )
 }
