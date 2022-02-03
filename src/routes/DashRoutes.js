@@ -4,11 +4,13 @@ import { routes } from '../types/types'
 import Home from '../pages/Home'
 import About from '../pages/About'
 import System from '../pages/System'
+import Nav from '../components/Nav'
 
 const DashRoutes = () => {
   return (
     <main className='min-h-screen min-w-full'>
-      <NavBar />
+      {/* <NavBar /> */}
+      <Nav />
       <div className='p-5'>
         <Routes>
           <Route path={routes.home} element={<Home />} />

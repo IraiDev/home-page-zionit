@@ -33,44 +33,49 @@ const systems = [
   },
 ]
 
-const Li = props => (
-  <li
-    className='font-semibold bg-zinc-100 shadow mb-2 max-w-[600px] rounded-md
-   transition duration-200 transform hover:scale-105'
-  >
-    <a
-      className='text-blue-500 cursor-pointer flex items-center justify-between p-2.5 gap-10'
-      href={props.to}
-      target='_blank'
-      rel='noreferrer'
-    >
-      <div className='capitalize flex gap-4 items-center text-base text-slate-800'>
-        <i className={props.icon + ' fa-2x'} />
-        <p>{props.children}</p>
+const List = ({ title, subtitle, icon, to }) => (
+  <li className='flex justify-between items-center bg-white py-3 px-6 border-b'>
+    <section className='flex items-center gap-6'>
+      <div className='w-11 h-11 bg-zinc-100 rounded-full flex items-center justify-center'>
+        <i className={icon + ' fa-lg text-zinc-400'} />
       </div>
-      <i className='fas fa-chevron-right' />
-    </a>
+      <div>
+        <h1 className='text-lg text-indigo-600 font-semibold first-letter:uppercase'>
+          {title}
+        </h1>
+        <h5 className='text-zinc-400'>{subtitle}</h5>
+      </div>
+    </section>
+    <section className='flex items-center gap-4'>
+      <a
+        className='py-1.5 px-2 bg-emerald-100 text-emerald-500 rounded-lg font-semibold transition duration-200 transform hover:scale-110'
+        href={to}
+        target='_blank'
+        rel='noreferrer'
+      >
+        visitar sitio
+      </a>
+      <i className='fas fa-chevron-right text-zinc-300' />
+    </section>
   </li>
 )
 
 const System = () => {
   return (
-    <main className='flex flex-col container mx-auto gap-10'>
-      <header>
-        <h1 className='text-2xl font-semibold'>Lista de sistema</h1>
-        <p>
-          Sistemas creados por ZionIT, desarrollados en distintas tecnologias,
-          algunas de ellas: PHP, Node.js y React.js, base de datos MariaDB,
-          sistemas alojados en servidores propios con certificacion SSL y hecho
-          a medida.
-        </p>
+    <main className='flex flex-col container mx-auto border rounded-md shadow-md bg-zinc-100'>
+      <header className='py-5 px-6 border-b'>
+        <h1 className='text-xl font-semibold'>Sistemas ZionIT</h1>
       </header>
 
-      <ul className='mx-auto'>
+      <ul className='w-full'>
         {systems.map(system => (
-          <Li key={system.id} to={system.url} icon={system.icon}>
-            {system.name}
-          </Li>
+          <List
+            key={system.id}
+            to={system.url}
+            icon={system.icon}
+            title={system.name}
+            subtitle='sistema'
+          />
         ))}
       </ul>
     </main>
