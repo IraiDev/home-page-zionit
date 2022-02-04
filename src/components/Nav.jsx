@@ -2,7 +2,7 @@ import { routes } from '../types/types'
 import LiNav from './LiNav'
 import logo from '../assets/logo/logo50x50.png'
 
-const CustomLi = props => (
+const Contact = props => (
   <li className='flex items-center gap-3 text-sm'>
     <i className={props.icon} />
     {props.children}
@@ -29,15 +29,14 @@ const Nav = () => {
           <i className='fas fa-user-circle fa-2x' />
         </div> */}
         <ul>
-          <CustomLi icon='far fa-envelope'>contacto@zionit.cl</CustomLi>
-          <CustomLi icon='fas fa-phone-alt'>+56 43 2314334</CustomLi>
+          <Contact icon='far fa-envelope'>contacto@zionit.cl</Contact>
+          <Contact icon='fas fa-phone-alt'>+56 43 2314334</Contact>
         </ul>
       </header>
       <footer className='h-14 flex items-center justify-between'>
         <ul className='flex gap-6'>
           <LiNav to={routes.home} name='Inicio' />
           <LiNav to={routes.system} name='Sistemas' />
-          <LiNav to={routes.about} name='Acerca de' />
         </ul>
       </footer>
     </nav>
