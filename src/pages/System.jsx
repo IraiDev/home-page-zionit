@@ -22,7 +22,7 @@ const System = () => {
    return (
       <main className='container mx-auto z-20 grid grid-cols-4 gap-5'>
          {systems.map(item => (
-            <Card key={item.id}>
+            <Card key={item.id} tecnology={item.tecno}>
                <CardHeader {...item} />
                <CardBody>{item.desc}</CardBody>
                <CardFooter>

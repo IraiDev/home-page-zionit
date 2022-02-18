@@ -19,6 +19,7 @@ export const systems = [
       desc: 'Controla tus actividades de trabajo.',
       url: 'http://www.zcloud.cl/registro_avance/index.php',
       icon: 'fas fa-clipboard-list',
+      tecno: 'php',
    },
    {
       id: uuidv4(),
@@ -26,6 +27,7 @@ export const systems = [
       desc: 'Revisa tus actividades, crea tareas, notas y actividades y revisa tu tiempo de trabajo.',
       url: `${URL_TYPE}://todo.${URL_DOMAIN}.cl/#/`,
       icon: 'fas fa-clipboard-list',
+      tecno: 'react',
    },
    {
       id: uuidv4(),
@@ -33,6 +35,7 @@ export const systems = [
       desc: 'Revisa, crea eventos y nuevos ticket para solicitar ayuda.',
       url: `${URL_TYPE}://tickets.${URL_DOMAIN}.cl/#/`,
       icon: 'fas fa-ticket-alt',
+      tecno: 'react',
    },
    {
       id: uuidv4(),
@@ -40,6 +43,7 @@ export const systems = [
       desc: 'Observa informacion importante de forma rapida y directa sobre tu empresa.',
       url: `${URL_TYPE}://health.${URL_DOMAIN}.cl`,
       icon: 'fas fa-heartbeat',
+      tecno: 'react',
    },
    {
       id: uuidv4(),
@@ -47,6 +51,7 @@ export const systems = [
       desc: 'Observa como se componen tus productos.',
       url: `${URL_TYPE}://recetas.${URL_DOMAIN}.cl`,
       icon: 'fas fa-heartbeat',
+      tecno: 'react',
    },
    {
       id: uuidv4(),
@@ -54,6 +59,7 @@ export const systems = [
       desc: 'Firma, genera y valida facturas de tu empresa.',
       url: `${URL_TYPE}://factura.${URL_DOMAIN}.cl`,
       icon: 'fas fa-heartbeat',
+      tecno: 'react',
    },
    {
       id: uuidv4(),
@@ -61,6 +67,7 @@ export const systems = [
       desc: 'Obserba en avence de cosechas de tu empresa.',
       url: `${URL_TYPE}://picoltue.${URL_DOMAIN}.cl/#/`,
       icon: 'fas fa-chart-bar',
+      tecno: 'react',
    },
    {
       id: uuidv4(),
@@ -68,6 +75,7 @@ export const systems = [
       desc: 'ERP para empresa curimapu.',
       url: `http://www.zcloud.cl/curimapu/index.php`,
       icon: 'fas fa-heartbeat',
+      tecno: 'php',
    },
    {
       id: uuidv4(),
@@ -75,6 +83,7 @@ export const systems = [
       desc: 'Sistema de reserva para profesionales.',
       url: `http://www.zcloud.cl/reservas/SistemaOnline.php`,
       icon: 'fas fa-heartbeat',
+      tecno: 'php',
    },
    {
       id: uuidv4(),
@@ -82,6 +91,7 @@ export const systems = [
       desc: 'Sistema de recetas para BNC.',
       url: `http://pruebas-erp.cl/bcn02/receta_ver.php?n=1`,
       icon: 'fas fa-heartbeat',
+      tecno: 'php',
    },
    {
       id: uuidv4(),
@@ -89,6 +99,7 @@ export const systems = [
       desc: 'Obserba las deteneciones de tus trabajadores en tiempo real.',
       url: `http://www.zcloud.cl/puntos/lista_proyectos_estilos.php?page=1&txtHasta=&txtDesde=&txtOrden=&filterPatente=LXLH19%20-%20I&txtIdDet=&fechaIniDet=&cmbTipoDet=&filterCampo=&cmbRadio=HORARIO&fechaInit=&fechaEnd=&filtroTablas=`,
       icon: 'fas fa-heartbeat',
+      tecno: 'php',
    },
    {
       id: uuidv4(),
@@ -96,6 +107,7 @@ export const systems = [
       desc: 'Sistema para el reclutamiento de personal.',
       url: `http://www.zcloud.cl/curimapu_tcn/`,
       icon: 'fas fa-heartbeat',
+      tecno: 'php',
    },
    {
       id: uuidv4(),
@@ -103,5 +115,6 @@ export const systems = [
       desc: 'ERP para CRS.',
       url: `http://zcloud.cl/erp-hc/principal.php`,
       icon: 'fas fa-heartbeat',
+      tecno: 'php',
    },
 ]
