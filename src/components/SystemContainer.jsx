@@ -13,7 +13,8 @@ const SystemContainer = ({ children, toggler, show, env }) => {
             </Button>
          </header>
          <section
-            className={`grid grid-cols-4 gap-5 animate__animated animate__faster my-5
+            className={`grid gap-5 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4
+               animate__animated animate__faster my-5
                ${show ? 'animate__fadeIn' : 'hidden'} 
             `}>
             {children}

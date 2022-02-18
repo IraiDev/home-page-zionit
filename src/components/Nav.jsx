@@ -14,7 +14,7 @@ const Contact = props => (
 )
 
 const SearchBar = props => (
-   <div className='flex items-baseline gap-3 py-2.5 px-6 bg-zinc-100/10 rounded-full w-[400px]'>
+   <div className='flex items-baseline gap-3 py-2.5 px-6 bg-zinc-100/10 rounded-full w-[400px] mx-auto'>
       <i className='fas fa-search text-white/60' />
       <input
          className='bg-transparent outline-none min-w-full text-lg'
@@ -45,12 +45,12 @@ const Nav = () => {
    return (
       <nav className='w-full bg-transparent px-10 z-30 sticky top-0 text-white'>
          <NavSection>
-            <div className='flex items-center gap-4'>
+            <div className='hidden md:flex items-center gap-4'>
                <img className='h-10 w-10' src={logo} alt='logo' />
                Zionit
             </div>
             <SearchBar value={search} name='search' onChange={onChangeValue} />
-            <ul>
+            <ul className='hidden sm:block'>
                <Contact icon='far fa-envelope'>contacto@zionit.cl</Contact>
                <Contact icon='fas fa-phone-alt'>+56 43 2314334</Contact>
             </ul>
