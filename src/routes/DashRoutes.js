@@ -9,7 +9,7 @@ const DashRoutes = () => {
          {/* <NavBar /> */}
          <Nav />
          <div className='grid content-center relative bg-white'>
-            <div className='h-[500px] bg-gradient-to-b from-zinc-800 via-zinc-700/80 to-transparent w-full fixed top-0 z-10' />
+            <div className='h-[700px] bg-gradient-to-b from-sky-800 via-sky-700/80 to-transparent w-full fixed top-0 z-10' />
             <Routes>
                <Route path={routes.home} element={<System />} />
                <Route path={routes.system} element={<System />} />
