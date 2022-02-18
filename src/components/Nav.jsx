@@ -1,3 +1,7 @@
+import { useContext, useEffect } from 'react'
+import { AppContext } from '../context/AppContext'
+import { getSystemsByName } from '../helpers/selectors/getSystemsByName'
+import { useForm } from '../hooks/useForm'
 import { routes } from '../types/types'
 import LiNav from './LiNav'
 import logo from '../assets/logo/logo50x50.png'
@@ -16,6 +20,9 @@ const SearchBar = props => (
          className='bg-transparent outline-none min-w-full text-lg'
          type='text'
          placeholder='Buscar'
+         name={props.name}
+         value={props.value}
+         onChange={props.onChange}
       />
    </div>
 )
@@ -27,6 +34,14 @@ const NavSection = props => (
 )
 
 const Nav = () => {
+   const { setSystemList } = useContext(AppContext)
+   const [{ search }, onChangeValue] = useForm({ search: '' })
+
+   useEffect(() => {
+      setSystemList(getSystemsByName(search))
+      // eslint-disable-next-line
+   }, [search])
+
    return (
       <nav className='w-full bg-transparent px-10 z-30 sticky top-0 text-white'>
          <NavSection>
@@ -34,7 +49,7 @@ const Nav = () => {
                <img className='h-10 w-10' src={logo} alt='logo' />
                Zionit
             </div>
-            <SearchBar />
+            <SearchBar value={search} name='search' onChange={onChangeValue} />
             <ul>
                <Contact icon='far fa-envelope'>contacto@zionit.cl</Contact>
                <Contact icon='fas fa-phone-alt'>+56 43 2314334</Contact>

@@ -9,9 +9,6 @@ export const routes = {
 
 export const users = ['iarriagada', 'sacuna', 'rdelcanto', 'fmarin', 'caraneda']
 
-const URL_TYPE = process.env.REACT_APP_ULR_TYPE
-const URL_DOMAIN = process.env.REACT_APP_URL_DOMAIN
-
 export const systems = [
    {
       id: uuidv4(),
@@ -20,54 +17,61 @@ export const systems = [
       url: 'http://www.zcloud.cl/registro_avance/index.php',
       icon: 'fas fa-clipboard-list',
       tecno: 'php',
+      env: 'pro',
    },
    {
       id: uuidv4(),
       title: 'control de actividades',
       desc: 'Revisa tus actividades, crea tareas, notas y actividades y revisa tu tiempo de trabajo.',
-      url: `${URL_TYPE}://todo.${URL_DOMAIN}.cl/#/`,
+      url: `https://todo.zprroduccion.cl/#/`,
       icon: 'fas fa-clipboard-list',
       tecno: 'react',
+      env: 'pro',
    },
    {
       id: uuidv4(),
       title: 'plataforma clientes',
       desc: 'Revisa, crea eventos y nuevos ticket para solicitar ayuda.',
-      url: `${URL_TYPE}://tickets.${URL_DOMAIN}.cl/#/`,
+      url: `https://tickets.zprroduccion.cl/#/`,
       icon: 'fas fa-ticket-alt',
       tecno: 'react',
+      env: 'pro',
    },
    {
       id: uuidv4(),
       title: 'health',
       desc: 'Observa informacion importante de forma rapida y directa sobre tu empresa.',
-      url: `${URL_TYPE}://health.${URL_DOMAIN}.cl`,
+      url: `https://health.zprroduccion.cl`,
       icon: 'fas fa-heartbeat',
       tecno: 'react',
+      env: 'pro',
    },
    {
       id: uuidv4(),
       title: 'recetas',
       desc: 'Observa como se componen tus productos.',
-      url: `${URL_TYPE}://recetas.${URL_DOMAIN}.cl`,
+      url: `https://recetas.zprroduccion.cl`,
       icon: 'fas fa-heartbeat',
       tecno: 'react',
+      env: 'pro',
    },
    {
       id: uuidv4(),
       title: 'factura electronica',
       desc: 'Firma, genera y valida facturas de tu empresa.',
-      url: `${URL_TYPE}://factura.${URL_DOMAIN}.cl`,
+      url: `https://factura.zprroduccion.cl`,
       icon: 'fas fa-heartbeat',
       tecno: 'react',
+      env: 'pro',
    },
    {
       id: uuidv4(),
       title: 'picoltue',
       desc: 'Obserba en avence de cosechas de tu empresa.',
-      url: `${URL_TYPE}://picoltue.${URL_DOMAIN}.cl/#/`,
+      url: `https://picoltue.zprroduccion.cl/#/`,
       icon: 'fas fa-chart-bar',
       tecno: 'react',
+      env: 'pro',
    },
    {
       id: uuidv4(),
@@ -76,6 +80,7 @@ export const systems = [
       url: `http://www.zcloud.cl/curimapu/index.php`,
       icon: 'fas fa-heartbeat',
       tecno: 'php',
+      env: 'pro',
    },
    {
       id: uuidv4(),
@@ -84,6 +89,7 @@ export const systems = [
       url: `http://www.zcloud.cl/reservas/SistemaOnline.php`,
       icon: 'fas fa-heartbeat',
       tecno: 'php',
+      env: 'pro',
    },
    {
       id: uuidv4(),
@@ -92,6 +98,7 @@ export const systems = [
       url: `http://pruebas-erp.cl/bcn02/receta_ver.php?n=1`,
       icon: 'fas fa-heartbeat',
       tecno: 'php',
+      env: 'pro',
    },
    {
       id: uuidv4(),
@@ -100,6 +107,7 @@ export const systems = [
       url: `http://www.zcloud.cl/puntos/lista_proyectos_estilos.php?page=1&txtHasta=&txtDesde=&txtOrden=&filterPatente=LXLH19%20-%20I&txtIdDet=&fechaIniDet=&cmbTipoDet=&filterCampo=&cmbRadio=HORARIO&fechaInit=&fechaEnd=&filtroTablas=`,
       icon: 'fas fa-heartbeat',
       tecno: 'php',
+      env: 'pro',
    },
    {
       id: uuidv4(),
@@ -108,6 +116,7 @@ export const systems = [
       url: `http://www.zcloud.cl/curimapu_tcn/`,
       icon: 'fas fa-heartbeat',
       tecno: 'php',
+      env: 'pro',
    },
    {
       id: uuidv4(),
@@ -116,5 +125,61 @@ export const systems = [
       url: `http://zcloud.cl/erp-hc/principal.php`,
       icon: 'fas fa-heartbeat',
       tecno: 'php',
+      env: 'pro',
+   },
+   // desarrollo
+   {
+      id: uuidv4(),
+      title: 'control de actividades',
+      desc: 'Revisa tus actividades, crea tareas, notas y actividades y revisa tu tiempo de trabajo.',
+      url: `http://todo.zpruebas.cl/#/`,
+      icon: 'fas fa-clipboard-list',
+      tecno: 'react',
+      env: 'dev',
+   },
+   {
+      id: uuidv4(),
+      title: 'plataforma clientes',
+      desc: 'Revisa, crea eventos y nuevos ticket para solicitar ayuda.',
+      url: `http://tickets.zpruebas.cl/#/`,
+      icon: 'fas fa-ticket-alt',
+      tecno: 'react',
+      env: 'dev',
+   },
+   // {
+   //    id: uuidv4(),
+   //    title: 'health',
+   //    desc: 'Observa informacion importante de forma rapida y directa sobre tu empresa.',
+   //    url: `http://health.zpruebas.cl`,
+   //    icon: 'fas fa-heartbeat',
+   //    tecno: 'react',
+   //    env: 'dev',
+   // },
+   {
+      id: uuidv4(),
+      title: 'recetas',
+      desc: 'Observa como se componen tus productos.',
+      url: `http://recetas.zpruebas.cl`,
+      icon: 'fas fa-heartbeat',
+      tecno: 'react',
+      env: 'dev',
+   },
+   {
+      id: uuidv4(),
+      title: 'factura electronica',
+      desc: 'Firma, genera y valida facturas de tu empresa.',
+      url: `http://factura.zpruebas.cl`,
+      icon: 'fas fa-heartbeat',
+      tecno: 'react',
+      env: 'dev',
+   },
+   {
+      id: uuidv4(),
+      title: 'picoltue',
+      desc: 'Obserba en avence de cosechas de tu empresa.',
+      url: `http://picoltue.zpruebas.cl/#/`,
+      icon: 'fas fa-chart-bar',
+      tecno: 'react',
+      env: 'dev',
    },
 ]

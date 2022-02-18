@@ -19,7 +19,7 @@ const Button = ({
          type={type}
          className={`
       py-2 px-2.5 font-semibold first-letter:capitalize focus:outline-none 
-      flex gap-2 items-center justify-center transition duration-300
+      flex gap-2 items-baseline justify-center transition duration-300
       text-base rounded-full
       ${className}
       ${block ? 'block' : 'inline-block'}
